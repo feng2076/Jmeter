@@ -1,0 +1,2861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="3.2" jmeter="3.3 r1808647">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="流程" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath">E:\apache-jmeter-3.3\lib\json.jar,E:\apache-jmeter-3.3\lib\ext\SSH.jar,E:\apache-jmeter-3.3\lib\ext\ganymed-ssh2-262.jar,E:\apache-jmeter-3.3\lib\ext\jsch-0.1.54.jar</stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="线程组" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1509590448000</longProp>
+        <longProp name="ThreadGroup.end_time">1509590448000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="极速钱包环境变量" enabled="false">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="Host" elementType="Argument">
+              <stringProp name="Argument.name">Host</stringProp>
+              <stringProp name="Argument.value">dev-92-newh5-xmzdm9.dev.kdqugou.com</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="random" elementType="Argument">
+              <stringProp name="Argument.name">random</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="phone" elementType="Argument">
+              <stringProp name="Argument.name">phone</stringProp>
+              <stringProp name="Argument.value">15995106013</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="sign" elementType="Argument">
+              <stringProp name="Argument.name">sign</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="captcha" elementType="Argument">
+              <stringProp name="Argument.name">captcha</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="password" elementType="Argument">
+              <stringProp name="Argument.name">password</stringProp>
+              <stringProp name="Argument.value">123456</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="source" elementType="Argument">
+              <stringProp name="Argument.name">source</stringProp>
+              <stringProp name="Argument.value">21</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="invite_code" elementType="Argument">
+              <stringProp name="Argument.name">invite_code</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="key" elementType="Argument">
+              <stringProp name="Argument.name">key</stringProp>
+              <stringProp name="Argument.value">jsqb#666*5</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="outtime" elementType="Argument">
+              <stringProp name="Argument.name">outtime</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.desc">验证码超时的时间</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="Date" elementType="Argument">
+              <stringProp name="Argument.name">Date</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">当前时间</stringProp>
+            </elementProp>
+            <elementProp name="sship" elementType="Argument">
+              <stringProp name="Argument.name">sship</stringProp>
+              <stringProp name="Argument.value">dev.kdqugou.com</stringProp>
+              <stringProp name="Argument.desc">服务器地址</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="sshname" elementType="Argument">
+              <stringProp name="Argument.name">sshname</stringProp>
+              <stringProp name="Argument.value">test</stringProp>
+              <stringProp name="Argument.desc">登录用户名</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="sshport" elementType="Argument">
+              <stringProp name="Argument.name">sshport</stringProp>
+              <stringProp name="Argument.value">1022</stringProp>
+              <stringProp name="Argument.desc">远程端口</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="sshkey" elementType="Argument">
+              <stringProp name="Argument.name">sshkey</stringProp>
+              <stringProp name="Argument.value">D:\\xshell\\jsqb</stringProp>
+              <stringProp name="Argument.desc">密钥</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="sshpassword" elementType="Argument">
+              <stringProp name="Argument.name">sshpassword</stringProp>
+              <stringProp name="Argument.value">123456</stringProp>
+              <stringProp name="Argument.desc">密码</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="command" elementType="Argument">
+              <stringProp name="Argument.name">command</stringProp>
+              <stringProp name="Argument.value">cd /code/dev/dev-92-newh5-xmzdm9;php yii ygd-check/ygd-zc-cw-check;php yii financial-loan-pay/koudai-withdraw</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">执行命令，多个以“;”隔开</stringProp>
+            </elementProp>
+            <elementProp name="lport" elementType="Argument">
+              <stringProp name="Argument.name">lport</stringProp>
+              <stringProp name="Argument.value">3306</stringProp>
+              <stringProp name="Argument.desc">本地端口</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="rhost" elementType="Argument">
+              <stringProp name="Argument.name">rhost</stringProp>
+              <stringProp name="Argument.value">mysql_dev</stringProp>
+              <stringProp name="Argument.desc">远程MySQL服务器  </stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="rport" elementType="Argument">
+              <stringProp name="Argument.name">rport</stringProp>
+              <stringProp name="Argument.value">3306</stringProp>
+              <stringProp name="Argument.desc">远程MySQL服务端口 </stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="dbsshuser" elementType="Argument">
+              <stringProp name="Argument.name">dbsshuser</stringProp>
+              <stringProp name="Argument.value">test</stringProp>
+              <stringProp name="Argument.desc">数据库SSH连接用户名  </stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="dbsshpw" elementType="Argument">
+              <stringProp name="Argument.name">dbsshpw</stringProp>
+              <stringProp name="Argument.value">123456</stringProp>
+              <stringProp name="Argument.desc">数据库SSH连接密码</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="dbsshhost" elementType="Argument">
+              <stringProp name="Argument.name">dbsshhost</stringProp>
+              <stringProp name="Argument.value">dev.kdqugou.com</stringProp>
+              <stringProp name="Argument.desc">SSH服务器 </stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="dbsshport" elementType="Argument">
+              <stringProp name="Argument.name">dbsshport</stringProp>
+              <stringProp name="Argument.value">1022</stringProp>
+              <stringProp name="Argument.desc">SSH访问端口 </stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="dburl" elementType="Argument">
+              <stringProp name="Argument.name">dburl</stringProp>
+              <stringProp name="Argument.value">jdbc:mysql://localhost:3306/jsqb</stringProp>
+              <stringProp name="Argument.desc">数据库URL</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="dbuser" elementType="Argument">
+              <stringProp name="Argument.name">dbuser</stringProp>
+              <stringProp name="Argument.value">jsqb_user</stringProp>
+              <stringProp name="Argument.desc">数据库用户名</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="dbpw" elementType="Argument">
+              <stringProp name="Argument.name">dbpw</stringProp>
+              <stringProp name="Argument.value">jsqb@ArEe4LJq</stringProp>
+              <stringProp name="Argument.desc">数据库密码</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="dbclass" elementType="Argument">
+              <stringProp name="Argument.name">dbclass</stringProp>
+              <stringProp name="Argument.value">com.mysql.jdbc.Driver</stringProp>
+              <stringProp name="Argument.desc">数据库驱动</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="result" elementType="Argument">
+              <stringProp name="Argument.name">result</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.desc">数据库返回结果</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="id" elementType="Argument">
+              <stringProp name="Argument.name">id</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">订单编号</stringProp>
+            </elementProp>
+            <elementProp name="uid" elementType="Argument">
+              <stringProp name="Argument.name">uid</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">打款订单编号</stringProp>
+            </elementProp>
+            <elementProp name="uuid" elementType="Argument">
+              <stringProp name="Argument.name">uuid</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">还款订单编号</stringProp>
+            </elementProp>
+            <elementProp name="money" elementType="Argument">
+              <stringProp name="Argument.name">money</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.desc">金额</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="plan_repayment_time" elementType="Argument">
+              <stringProp name="Argument.name">plan_repayment_time</stringProp>
+              <stringProp name="Argument.value">1509465600</stringProp>
+              <stringProp name="Argument.desc">逾期时间</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="yuqicommand" elementType="Argument">
+              <stringProp name="Argument.name">yuqicommand</stringProp>
+              <stringProp name="Argument.value">cd /code/dev/dev-92-newh5-xmzdm9;php yii overdue-calculate/test-calculate;php yii overdue-calculate/generate-debit-record;php yii loan-debit/test-debit</stringProp>
+              <stringProp name="Argument.desc">逾期脚本</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="csrf" elementType="Argument">
+              <stringProp name="Argument.name">csrf</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="fscommand" elementType="Argument">
+              <stringProp name="Argument.name">fscommand</stringProp>
+              <stringProp name="Argument.value">cd /code/dev/dev-92-newh5-xmzdm9;php yii risk-control/update-loan</stringProp>
+              <stringProp name="Argument.desc">复审脚本</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="user_id" elementType="Argument">
+              <stringProp name="Argument.name">user_id</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.desc">用户编号</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="username" elementType="Argument">
+              <stringProp name="Argument.name">username</stringProp>
+              <stringProp name="Argument.value">15995106013</stringProp>
+              <stringProp name="Argument.desc">登陆名（就是手机号码）</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="dbname" elementType="Argument">
+              <stringProp name="Argument.name">dbname</stringProp>
+              <stringProp name="Argument.value">jsqb</stringProp>
+              <stringProp name="Argument.desc">数据库名</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="极速有钱环境变量" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="Host" elementType="Argument">
+              <stringProp name="Argument.name">Host</stringProp>
+              <stringProp name="Argument.value">dev-0-app-init-jn6d56.dev.bm.jisuqianbao.com</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="edition" elementType="Argument">
+              <stringProp name="Argument.name">edition</stringProp>
+              <stringProp name="Argument.value">dev-0-app-init-jn6d56</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="random" elementType="Argument">
+              <stringProp name="Argument.name">random</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="phone" elementType="Argument">
+              <stringProp name="Argument.name">phone</stringProp>
+              <stringProp name="Argument.value">15995106013</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="sign" elementType="Argument">
+              <stringProp name="Argument.name">sign</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="captcha" elementType="Argument">
+              <stringProp name="Argument.name">captcha</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="password" elementType="Argument">
+              <stringProp name="Argument.name">password</stringProp>
+              <stringProp name="Argument.value">123456</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="source" elementType="Argument">
+              <stringProp name="Argument.name">source</stringProp>
+              <stringProp name="Argument.value">21</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="invite_code" elementType="Argument">
+              <stringProp name="Argument.name">invite_code</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="key" elementType="Argument">
+              <stringProp name="Argument.name">key</stringProp>
+              <stringProp name="Argument.value">jsqb#666*5</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="outtime" elementType="Argument">
+              <stringProp name="Argument.name">outtime</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.desc">验证码超时的时间</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="Date" elementType="Argument">
+              <stringProp name="Argument.name">Date</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">当前时间</stringProp>
+            </elementProp>
+            <elementProp name="sship" elementType="Argument">
+              <stringProp name="Argument.name">sship</stringProp>
+              <stringProp name="Argument.value">139.224.22.30</stringProp>
+              <stringProp name="Argument.desc">服务器地址</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="sshname" elementType="Argument">
+              <stringProp name="Argument.name">sshname</stringProp>
+              <stringProp name="Argument.value">xufeng</stringProp>
+              <stringProp name="Argument.desc">登录用户名</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="sshport" elementType="Argument">
+              <stringProp name="Argument.name">sshport</stringProp>
+              <stringProp name="Argument.value">1022</stringProp>
+              <stringProp name="Argument.desc">远程端口</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="sshkey" elementType="Argument">
+              <stringProp name="Argument.name">sshkey</stringProp>
+              <stringProp name="Argument.value">D:\\xshell\\jsqb</stringProp>
+              <stringProp name="Argument.desc">密钥</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="sshpassword" elementType="Argument">
+              <stringProp name="Argument.name">sshpassword</stringProp>
+              <stringProp name="Argument.value">123456</stringProp>
+              <stringProp name="Argument.desc">密码</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="sshev" elementType="Argument">
+              <stringProp name="Argument.name">sshev</stringProp>
+              <stringProp name="Argument.value">xufeng:123456:139.224.22.30:1022;test:123456:jsde-dev-app_cron_1:22</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="command" elementType="Argument">
+              <stringProp name="Argument.name">command</stringProp>
+              <stringProp name="Argument.value">cd /code/dev-0-app-init-jn6d56;php yii financial-loan-pay/fn-check-create-record;php yii financial-loan-pay/koudai-withdraw;exit</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">执行命令，多个以“;”隔开</stringProp>
+            </elementProp>
+            <elementProp name="lport" elementType="Argument">
+              <stringProp name="Argument.name">lport</stringProp>
+              <stringProp name="Argument.value">3306</stringProp>
+              <stringProp name="Argument.desc">本地端口</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="rhost" elementType="Argument">
+              <stringProp name="Argument.name">rhost</stringProp>
+              <stringProp name="Argument.value">jsde-dev-service_mysql-dev_1</stringProp>
+              <stringProp name="Argument.desc">远程MySQL服务器  </stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="rport" elementType="Argument">
+              <stringProp name="Argument.name">rport</stringProp>
+              <stringProp name="Argument.value">3306</stringProp>
+              <stringProp name="Argument.desc">远程MySQL服务端口 </stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="dbsshuser" elementType="Argument">
+              <stringProp name="Argument.name">dbsshuser</stringProp>
+              <stringProp name="Argument.value">xufeng</stringProp>
+              <stringProp name="Argument.desc">数据库SSH连接用户名  </stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="dbsshpw" elementType="Argument">
+              <stringProp name="Argument.name">dbsshpw</stringProp>
+              <stringProp name="Argument.value">123456</stringProp>
+              <stringProp name="Argument.desc">数据库SSH连接密码</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="dbsshhost" elementType="Argument">
+              <stringProp name="Argument.name">dbsshhost</stringProp>
+              <stringProp name="Argument.value">139.224.22.30</stringProp>
+              <stringProp name="Argument.desc">SSH服务器 </stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="dbsshport" elementType="Argument">
+              <stringProp name="Argument.name">dbsshport</stringProp>
+              <stringProp name="Argument.value">1022</stringProp>
+              <stringProp name="Argument.desc">SSH访问端口 </stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="dburl" elementType="Argument">
+              <stringProp name="Argument.name">dburl</stringProp>
+              <stringProp name="Argument.value">jdbc:mysql://localhost:3306/jsde</stringProp>
+              <stringProp name="Argument.desc">数据库URL</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="dbuser" elementType="Argument">
+              <stringProp name="Argument.name">dbuser</stringProp>
+              <stringProp name="Argument.value">jsde_user</stringProp>
+              <stringProp name="Argument.desc">数据库用户名</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="dbpw" elementType="Argument">
+              <stringProp name="Argument.name">dbpw</stringProp>
+              <stringProp name="Argument.value">jsqb@Arse5LJq</stringProp>
+              <stringProp name="Argument.desc">数据库密码</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="dbclass" elementType="Argument">
+              <stringProp name="Argument.name">dbclass</stringProp>
+              <stringProp name="Argument.value">com.mysql.jdbc.Driver</stringProp>
+              <stringProp name="Argument.desc">数据库驱动</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="result" elementType="Argument">
+              <stringProp name="Argument.name">result</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.desc">数据库返回结果</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="id" elementType="Argument">
+              <stringProp name="Argument.name">id</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">订单编号</stringProp>
+            </elementProp>
+            <elementProp name="uid" elementType="Argument">
+              <stringProp name="Argument.name">uid</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">打款订单编号</stringProp>
+            </elementProp>
+            <elementProp name="uuid" elementType="Argument">
+              <stringProp name="Argument.name">uuid</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">还款订单编号</stringProp>
+            </elementProp>
+            <elementProp name="money" elementType="Argument">
+              <stringProp name="Argument.name">money</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.desc">金额</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="plan_repayment_time" elementType="Argument">
+              <stringProp name="Argument.name">plan_repayment_time</stringProp>
+              <stringProp name="Argument.value">1510156800</stringProp>
+              <stringProp name="Argument.desc">逾期时间</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="yuqicommand" elementType="Argument">
+              <stringProp name="Argument.name">yuqicommand</stringProp>
+              <stringProp name="Argument.value">cd /code/dev-0-app-init-jn6d56;php yii overdue-calculate/test-calculate;php yii overdue-calculate/generate-debit-record;php yii loan-debit/test-debit;exit</stringProp>
+              <stringProp name="Argument.desc">逾期脚本</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="csrf" elementType="Argument">
+              <stringProp name="Argument.name">csrf</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="fscommand" elementType="Argument">
+              <stringProp name="Argument.name">fscommand</stringProp>
+              <stringProp name="Argument.value">cd /code/dev-0-app-init-jn6d56;php yii risk-control/update-loan;exit</stringProp>
+              <stringProp name="Argument.desc">复审脚本</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="user_id" elementType="Argument">
+              <stringProp name="Argument.name">user_id</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.desc">用户编号</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="username" elementType="Argument">
+              <stringProp name="Argument.name">username</stringProp>
+              <stringProp name="Argument.value">15995106013</stringProp>
+              <stringProp name="Argument.desc">登陆名（就是手机号码）</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="dbname" elementType="Argument">
+              <stringProp name="Argument.name">dbname</stringProp>
+              <stringProp name="Argument.value">jsyq</stringProp>
+              <stringProp name="Argument.desc">数据库名</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="ssss" elementType="Argument">
+              <stringProp name="Argument.name">ssss</stringProp>
+              <stringProp name="Argument.value">cd /code/dev-0-app-init-jn6d56;exit</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="bankid" elementType="Argument">
+              <stringProp name="Argument.name">bankid</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.desc">银行卡id</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="status" elementType="Argument">
+              <stringProp name="Argument.name">status</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.desc">订单状态</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie 管理器" enabled="true">
+          <collectionProp name="CookieManager.cookies"/>
+          <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+        </CookieManager>
+        <hashTree/>
+        <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="连接信用金卡" enabled="false">
+          <boolProp name="autocommit">true</boolProp>
+          <stringProp name="checkQuery">select 1</stringProp>
+          <stringProp name="connectionAge">500</stringProp>
+          <stringProp name="dataSource">mysql</stringProp>
+          <stringProp name="dbUrl">jdbc:mysql://139.224.22.30:23016/xyjk_db</stringProp>
+          <stringProp name="driver">com.mysql.jdbc.Driver</stringProp>
+          <boolProp name="keepAlive">true</boolProp>
+          <stringProp name="password">IJD8EfDa</stringProp>
+          <stringProp name="poolMax">0</stringProp>
+          <stringProp name="timeout">1000</stringProp>
+          <stringProp name="transactionIsolation">DEFAULT</stringProp>
+          <stringProp name="trimInterval">6000</stringProp>
+          <stringProp name="username">xyjk_usr</stringProp>
+        </JDBCDataSource>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="随机参数" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path">/credit-app/random?clientType=ios&amp;osVersion=11.0&amp;deviceId=2154bb524854427cb3bbd9beff4176c7&amp;appVersion=1.0.0&amp;appMarket=AppStore&amp;deviceName=iPhone%207</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="验证返回" enabled="false">
+            <stringProp name="JSON_PATH">$.code</stringProp>
+            <stringProp name="EXPECTED_VALUE">0</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+          </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="获取random和sign值" enabled="false">
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="script">import org.json.*;
+import ssh.MD5;
+String jsonContent = prev.getResponseDataAsString(); 
+JSONObject response = new JSONObject(jsonContent); 
+String random= response.getJSONObject(&quot;data&quot;).get(&quot;random&quot;).toString(); 
+vars.put(&quot;random&quot;,random);
+String esign=vars.get(&quot;phone&quot;)+vars.get(&quot;random&quot;)+vars.get(&quot;key&quot;);
+String sign = MD5.getMd5(esign);
+vars.put(&quot;sign&quot;,sign);</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="打款脚本" enabled="false">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import ssh.GetCode;
+import ch.ethz.ssh2.*;
+
+String a=GetCode.ssh(vars.get(&quot;sship&quot;),vars.get(&quot;sshname&quot;),Integer.parseInt(vars.get(&quot;sshport&quot;)),vars.get(&quot;sshkey&quot;),vars.get(&quot;sshpassword&quot;),vars.get(&quot;command&quot;));
+
+log.info(a);</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="查询订单id准备打款回调" enabled="false">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import ssh.Database;
+
+String sql=&quot;select order_id from jsqb.tb_financial_loan_record where user_id=&apos;5053546&apos; ORDER BY id DESC&quot;;
+
+String id=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;id&quot;,id);
+
+log.info(&quot;打款回调的订单id：&quot;+id);</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="查询还款订单编号" enabled="false">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import ssh.Database;
+
+String sql=&quot;SELECT order_uuid FROM jsqb.tb_user_credit_money_log where user_id=&apos;5053546&apos; ORDER BY id DESC&quot;;
+
+String uuid=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;uuid&quot;,uuid);
+
+log.info(&quot;还款回调的订单id：&quot;+uuid);</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="获取手机注册验证码" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="phone" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${phone}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">phone</stringProp>
+              </elementProp>
+              <elementProp name="random" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${random}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">random</stringProp>
+              </elementProp>
+              <elementProp name="sign" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${sign}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">sign</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">HTTP</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/credit-user/reg-get-code?clientType=ios&amp;osVersion=11.0&amp;deviceId=2154bb524854427cb3bbd9beff4176c7&amp;appVersion=1.0.0&amp;appMarket=AppStore&amp;deviceName=iPhone%207</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="验证短信" enabled="true">
+            <stringProp name="JSON_PATH">$.code</stringProp>
+            <stringProp name="EXPECTED_VALUE">0</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+          </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+          <hashTree/>
+        </hashTree>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="获取数据库中的验证码" enabled="false">
+          <stringProp name="dataSource">mysql</stringProp>
+          <stringProp name="query">select captcha,expire_time from tb_user_captcha where phone=${phone} and type=&apos;register&apos;;</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
+          <stringProp name="resultSetHandler">Store as String</stringProp>
+          <stringProp name="resultVariable">DB</stringProp>
+          <stringProp name="variableNames"></stringProp>
+        </JDBCSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="获取验证码" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">String captcha = vars.getObject(&quot;DB&quot;).get(0).get(&quot;captcha&quot;);
+vars.put(&quot;captcha&quot;,captcha);
+
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="获取验证码过期时间" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">String outtime = vars.getObject(&quot;DB&quot;).get(0).get(&quot;expire_time&quot;).toString();
+vars.put(&quot;outtime&quot;,outtime);
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="获取当前时间" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import java.util.*; 
+int y,m,d,h,mi,s;     
+Calendar cal=Calendar.getInstance();     
+y=cal.get(Calendar.YEAR);     
+m=cal.get(Calendar.MONTH);     
+d=cal.get(Calendar.DATE);     
+h=cal.get(Calendar.HOUR_OF_DAY);     
+mi=cal.get(Calendar.MINUTE);     
+s=cal.get(Calendar.SECOND);
+//System.out.println(&quot;The current time is:&quot;+y+&quot;/&quot;+m+&quot;/&quot;+d+&quot;/&quot;+h+&quot;/&quot;+mi+&quot;/&quot;+s+&quot;/&quot;); 
+log.info(&quot;The current time is:&quot;+y+&quot;/&quot;+m+&quot;/&quot;+d+&quot;/&quot;+h+&quot;/&quot;+mi+&quot;/&quot;+s+&quot;/&quot;);
+vars.put(&quot;Date&quot;,y+&quot;/&quot;+m+&quot;/&quot;+d+&quot;/&quot;+h+&quot;/&quot;+mi+&quot;/&quot;+s); </stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="判断短信是否过期" enabled="false">
+            <stringProp name="BeanShellAssertion.query"></stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="注册" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="code" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${captcha}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">code</stringProp>
+              </elementProp>
+              <elementProp name="phone" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${phone}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">phone</stringProp>
+              </elementProp>
+              <elementProp name="password" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${password}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">password</stringProp>
+              </elementProp>
+              <elementProp name="source" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${source}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">source</stringProp>
+              </elementProp>
+              <elementProp name="invite_code" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${invite_code}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">invite_code</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path">/credit-user/register?clientType=ios&amp;osVersion=11.0&amp;deviceId=2154bb524854427cb3bbd9beff4176c7&amp;appVersion=1.0.0&amp;appMarket=AppStore&amp;deviceName=iPhone%207</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="验证注册" enabled="true">
+            <stringProp name="JSON_PATH">$.code</stringProp>
+            <stringProp name="EXPECTED_VALUE">0</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+          </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="登录" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="password" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">123456</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">password</stringProp>
+              </elementProp>
+              <elementProp name="username" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">15995106013</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">username</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path">/credit/web/credit-user/login?</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="点击申请" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="money" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">1000</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">money</stringProp>
+              </elementProp>
+              <elementProp name="period" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">14</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">period</stringProp>
+              </elementProp>
+              <elementProp name="card_type" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">card_type</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path">/credit/web/credit-loan/get-confirm-loan-gai?</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="设置密码" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="确认申请" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="tips" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">您需要&lt;font color=&quot;#ff8003&quot;&gt;14&lt;/font&gt;天后，还款</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">tips</stringProp>
+              </elementProp>
+              <elementProp name="protocol_url" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">https://jsqb.kdqugou.com/frontend/web/index.php?r=page/detail?id=627</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">protocol_url</stringProp>
+              </elementProp>
+              <elementProp name="card_no" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">6214850214904853</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">card_no</stringProp>
+              </elementProp>
+              <elementProp name="true_money" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">850.00</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">true_money</stringProp>
+              </elementProp>
+              <elementProp name="bank_name" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">招商银行</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">bank_name</stringProp>
+              </elementProp>
+              <elementProp name="money" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">1000.00</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">money</stringProp>
+              </elementProp>
+              <elementProp name="url_two" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">http://dev-92-newh5-xmzdm9.dev.kdqugou.com/credit/web/credit-web/loan-agreement?clientType=wap</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">url_two</stringProp>
+              </elementProp>
+              <elementProp name="verify_loan_pass" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">verify_loan_pass</stringProp>
+              </elementProp>
+              <elementProp name="real_pay_pwd_status" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">real_pay_pwd_status</stringProp>
+              </elementProp>
+              <elementProp name="protocol_msg" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">protocol_msg</stringProp>
+              </elementProp>
+              <elementProp name="url_two_text" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">《平台服务协议》</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">url_two_text</stringProp>
+              </elementProp>
+              <elementProp name="card_type" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">card_type</stringProp>
+              </elementProp>
+              <elementProp name="coupon_total" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">coupon_total</stringProp>
+              </elementProp>
+              <elementProp name="url_three" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">http://dev-92-newh5-xmzdm9.dev.kdqugou.com/credit/web/credit-web/license-agreement?clientType=wap</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">url_three</stringProp>
+              </elementProp>
+              <elementProp name="pay_password" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">123456</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">pay_password</stringProp>
+              </elementProp>
+              <elementProp name="url_one_text" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">《借款协议》</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">url_one_text</stringProp>
+              </elementProp>
+              <elementProp name="period" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">14</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">period</stringProp>
+              </elementProp>
+              <elementProp name="hide_counter_fee" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">hide_counter_fee</stringProp>
+              </elementProp>
+              <elementProp name="extra_tips" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">extra_tips</stringProp>
+              </elementProp>
+              <elementProp name="url_three_text" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">《授权扣款委托书》</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">url_three_text</stringProp>
+              </elementProp>
+              <elementProp name="counter_fee" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">150.00</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">counter_fee</stringProp>
+              </elementProp>
+              <elementProp name="url_one" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">http://dev-92-newh5-xmzdm9.dev.kdqugou.com/credit/web/credit-web/platform-service?day=14&amp;money=1000&amp;type=1&amp;clientType=wap</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">url_one</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path">/credit/web/credit-loan/apply-loan?</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="用户id查询" enabled="true">
+          <stringProp name="BeanShellSampler.query">import ssh.Database;
+
+String sql=&quot;select id from tb_loan_person where phone=&apos;&quot;+vars.get(&quot;phone&quot;)+&quot;&apos;&quot;;
+
+String user_id=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;user_id&quot;,user_id);
+
+log.info(&quot;用户编号id：&quot;+user_id);</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="查询订单编号" enabled="true">
+          <stringProp name="BeanShellSampler.query">import ssh.Database;
+
+String sql=&quot;select id from tb_user_loan_order where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+
+String id=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;id&quot;,id);
+
+log.info(&quot;订单编号id：&quot;+id);</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="查询订单状态" enabled="true">
+          <stringProp name="BeanShellSampler.query">import ssh.Database;
+
+String sql=&quot;select STATUS from tb_user_loan_order where id=&apos;&quot;+vars.get(&quot;id&quot;)+&quot;&apos;&quot;;
+
+String status=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;status&quot;,status);
+
+log.info(&quot;订单状态status：&quot;+status+&quot;,如果没有任何的处理&quot;);</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="检查是否是新订单" enabled="true">
+          <stringProp name="IfController.condition">&quot;${status}&quot;==&quot;0&quot;</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+        </IfController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="页面登陆" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">/backend/web/index.php</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">http://dev-92-newh5-xmzdm9.dev.kdqugou.com/backend/web/index.php</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="csrf提取" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">csrf</stringProp>
+              <stringProp name="RegexExtractor.regex">&lt;input type=&quot;hidden&quot; name=&quot;_csrf&quot; value=&quot;(.*)&quot;&gt;&lt;table class=&quot;logintb&quot;&gt;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number"></stringProp>
+            </RegexExtractor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="登陆完成" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="submit_btn" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">登录</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">submit_btn</stringProp>
+                </elementProp>
+                <elementProp name="LoginForm[verifyCode]" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value"></stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">LoginForm[verifyCode]</stringProp>
+                </elementProp>
+                <elementProp name="LoginForm[username]" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">admin</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">LoginForm[username]</stringProp>
+                </elementProp>
+                <elementProp name="LoginForm[password]" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">123456</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">LoginForm[password]</stringProp>
+                </elementProp>
+                <elementProp name="_csrf" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${csrf}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">_csrf</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">/backend/web/index.php?r=main%2Flogin</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="跳过机审" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="id" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${id}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">id</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">/backend/web/index.php?r=pocket%2Fcheck-status</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="等待3秒" enabled="true">
+              <stringProp name="ConstantTimer.delay">3000</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="进入人工初审" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="r" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">pocket/pocket-first-trail</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">r</stringProp>
+                </elementProp>
+                <elementProp name="id" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${id}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">id</stringProp>
+                </elementProp>
+                <elementProp name="view" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">other</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">view</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">/backend/web/index.php?</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="csrf提取" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">csrf</stringProp>
+              <stringProp name="RegexExtractor.regex">&lt;meta name=&quot;csrf-token&quot; content=&quot;(.*)&quot;&gt;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number"></stringProp>
+            </RegexExtractor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="人工初审" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="submit_btn" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">提交</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">submit_btn</stringProp>
+                </elementProp>
+                <elementProp name="remark" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value"></stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">remark</stringProp>
+                </elementProp>
+                <elementProp name="operation" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">1</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">operation</stringProp>
+                </elementProp>
+                <elementProp name="nocode" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">D1o08</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">nocode</stringProp>
+                </elementProp>
+                <elementProp name="loan_action" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">1</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">loan_action</stringProp>
+                </elementProp>
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">A1o06</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                </elementProp>
+                <elementProp name="_csrf" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${csrf}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">_csrf</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">/backend/web/index.php?r=pocket%2Fpocket-first-trail&amp;id=${id}&amp;view=other</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="等待5秒" enabled="true">
+              <stringProp name="ConstantTimer.delay">5000</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="进入人工复审" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="id" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${id}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">id</stringProp>
+                </elementProp>
+                <elementProp name="r" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">pocket/pocket-twice-trail</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">r</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">/backend/web/index.php?</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="csrf提取" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">csrf</stringProp>
+              <stringProp name="RegexExtractor.regex">&lt;meta name=&quot;csrf-token&quot; content=&quot;(.*)&quot;&gt;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number"></stringProp>
+            </RegexExtractor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="人工复审" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="_csrf" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${csrf}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">_csrf</stringProp>
+                </elementProp>
+                <elementProp name="operation" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">1</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">operation</stringProp>
+                </elementProp>
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">A1o06</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                </elementProp>
+                <elementProp name="nocode" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">D1o08</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">nocode</stringProp>
+                </elementProp>
+                <elementProp name="remark" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value"></stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">remark</stringProp>
+                </elementProp>
+                <elementProp name="submit_btn" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">提交</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">submit_btn</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">/backend/web/index.php?r=pocket%2Fpocket-twice-trail&amp;id=${id}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="退出后台登陆" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">/backend/web/index.php?r=main%2Flogout</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="查询订单状态" enabled="true">
+            <stringProp name="BeanShellSampler.query">import ssh.Database;
+
+String sql=&quot;select STATUS from tb_user_loan_order where id=&apos;&quot;+vars.get(&quot;id&quot;)+&quot;&apos;&quot;;
+
+String status=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;status&quot;,status);
+
+log.info(&quot;订单状态status：&quot;+status);</stringProp>
+            <stringProp name="BeanShellSampler.filename"></stringProp>
+            <stringProp name="BeanShellSampler.parameters"></stringProp>
+            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+          </BeanShellSampler>
+          <hashTree/>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="检查状态是否是待放款" enabled="true">
+            <stringProp name="IfController.condition">&quot;${status}&quot;==&quot;8&quot;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="打款脚本" enabled="true">
+              <stringProp name="BeanShellSampler.query">import ssh.Getssh;
+import com.jcraft.jsch.*;
+//import ssh.GetCode;
+//import ch.ethz.ssh2.*;
+//String a=GetCode.ssh(vars.get(&quot;sship&quot;), vars.get(&quot;sshname&quot;), Integer.parseInt(vars.get(&quot;sshport&quot;)), vars.get(&quot;sshkey&quot;), vars.get(&quot;sshpassword&quot;), vars.get(&quot;command&quot;));sshev
+//String[] b={&quot;xufeng:123456:139.224.22.30:1022&quot;,&quot;test:123456:jsde-dev-app_cron_1:22&quot;};
+String host=vars.get(&quot;sshev&quot;);
+String[] ech=host.split(&quot;;&quot;);
+int num=ech.length;
+String[] sshhost=new String[num];
+for(int i=0;i&lt;num;i++){
+	sshhost[i]=ech[i];
+	log.info(&quot;host配置为：&quot;+ech[i]);
+}
+String a=Getssh.get(vars.get(&quot;sshkey&quot;),vars.get(&quot;sshpassword&quot;),vars.get(&quot;command&quot;),sshhost);
+log.info(&quot;打款脚本返回信息：&quot;+a);</stringProp>
+              <stringProp name="BeanShellSampler.filename"></stringProp>
+              <stringProp name="BeanShellSampler.parameters"></stringProp>
+              <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+            </BeanShellSampler>
+            <hashTree/>
+            <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="查询订单状态" enabled="true">
+              <stringProp name="BeanShellSampler.query">import ssh.Database;
+
+String sql=&quot;select STATUS from tb_user_loan_order where id=&apos;&quot;+vars.get(&quot;id&quot;)+&quot;&apos;&quot;;
+
+String status=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;status&quot;,status);
+
+log.info(&quot;订单状态status：&quot;+status);</stringProp>
+              <stringProp name="BeanShellSampler.filename"></stringProp>
+              <stringProp name="BeanShellSampler.parameters"></stringProp>
+              <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+            </BeanShellSampler>
+            <hashTree/>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="检查状态是否已放款" enabled="true">
+              <stringProp name="IfController.condition">&quot;${status}&quot;==&quot;2&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="打款回调" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="type" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">1</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">type</stringProp>
+                    </elementProp>
+                    <elementProp name="order_id" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${uid}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">order_id</stringProp>
+                    </elementProp>
+                    <elementProp name="code" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">0</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">code</stringProp>
+                    </elementProp>
+                    <elementProp name="money" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${money}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">money</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+                <stringProp name="HTTPSampler.path">/frontend/web/notify/test-callback?</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="查询订单id准备打款回调" enabled="true">
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="parameters"></stringProp>
+                  <boolProp name="resetInterpreter">false</boolProp>
+                  <stringProp name="script">import ssh.Database;
+
+String sql=&quot;select order_id from tb_financial_loan_record where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+
+String uid=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;uid&quot;,uid);
+
+log.info(&quot;打款回调的订单id：&quot;+uid);</stringProp>
+                </BeanShellPreProcessor>
+                <hashTree/>
+                <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="查询订单金额" enabled="true">
+                  <boolProp name="resetInterpreter">false</boolProp>
+                  <stringProp name="parameters"></stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="script">import ssh.Database;
+
+String sql=&quot;select money from tb_financial_loan_record where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+
+String money=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;money&quot;,money);
+
+log.info(&quot;打款回调的订单金额：&quot;+money);</stringProp>
+                </BeanShellPreProcessor>
+                <hashTree/>
+              </hashTree>
+              <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="查询订单状态" enabled="true">
+                <stringProp name="BeanShellSampler.query">import ssh.Database;
+
+String sql=&quot;select STATUS from tb_user_loan_order where id=&apos;&quot;+vars.get(&quot;id&quot;)+&quot;&apos;&quot;;
+
+String status=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;status&quot;,status);
+
+log.info(&quot;订单状态status：&quot;+status);</stringProp>
+                <stringProp name="BeanShellSampler.filename"></stringProp>
+                <stringProp name="BeanShellSampler.parameters"></stringProp>
+                <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+              </BeanShellSampler>
+              <hashTree/>
+              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="检查状态是否是还款中" enabled="true">
+                <stringProp name="IfController.condition">&quot;${status}&quot;==&quot;3&quot;</stringProp>
+                <boolProp name="IfController.evaluateAll">false</boolProp>
+              </IfController>
+              <hashTree>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="登陆手机客户端" enabled="true">
+                  <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+                    <collectionProp name="Arguments.arguments">
+                      <elementProp name="password" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                        <stringProp name="Argument.value">123456</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                        <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                        <stringProp name="Argument.name">password</stringProp>
+                      </elementProp>
+                      <elementProp name="username" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                        <stringProp name="Argument.value">15995106013</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                        <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                        <stringProp name="Argument.name">username</stringProp>
+                      </elementProp>
+                    </collectionProp>
+                  </elementProp>
+                  <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+                  <stringProp name="HTTPSampler.port"></stringProp>
+                  <stringProp name="HTTPSampler.protocol">http</stringProp>
+                  <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+                  <stringProp name="HTTPSampler.path">/credit/web/credit-user/login?</stringProp>
+                  <stringProp name="HTTPSampler.method">POST</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                  <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                  <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                  <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                </HTTPSamplerProxy>
+                <hashTree/>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="点击还款" enabled="true">
+                  <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+                    <collectionProp name="Arguments.arguments">
+                      <elementProp name="password" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                        <stringProp name="Argument.value">${password}</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                        <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                        <stringProp name="Argument.name">password</stringProp>
+                      </elementProp>
+                    </collectionProp>
+                  </elementProp>
+                  <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+                  <stringProp name="HTTPSampler.port"></stringProp>
+                  <stringProp name="HTTPSampler.protocol">http</stringProp>
+                  <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+                  <stringProp name="HTTPSampler.path">/mobile/web/user/check-pay-pwd-post</stringProp>
+                  <stringProp name="HTTPSampler.method">POST</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                  <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                  <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                  <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                </HTTPSamplerProxy>
+                <hashTree>
+                  <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="获取sign" enabled="true">
+                    <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                    <stringProp name="RegexExtractor.refname">sign</stringProp>
+                    <stringProp name="RegexExtractor.regex">{&quot;code&quot;:0,&quot;sign&quot;:&quot;(.*)&quot;,&quot;ret&quot;:true}</stringProp>
+                    <stringProp name="RegexExtractor.template">$1$</stringProp>
+                    <stringProp name="RegexExtractor.default"></stringProp>
+                    <stringProp name="RegexExtractor.match_number"></stringProp>
+                  </RegexExtractor>
+                  <hashTree/>
+                </hashTree>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="还款" enabled="true">
+                  <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+                    <collectionProp name="Arguments.arguments">
+                      <elementProp name="pay_pwd_sign" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                        <stringProp name="Argument.value">${sign}</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                        <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                        <stringProp name="Argument.name">pay_pwd_sign</stringProp>
+                      </elementProp>
+                      <elementProp name="card_id" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                        <stringProp name="Argument.value">${bankid}</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                        <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                        <stringProp name="Argument.name">card_id</stringProp>
+                      </elementProp>
+                      <elementProp name="id" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                        <stringProp name="Argument.value">${id}</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                        <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                        <stringProp name="Argument.name">id</stringProp>
+                      </elementProp>
+                    </collectionProp>
+                  </elementProp>
+                  <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+                  <stringProp name="HTTPSampler.port"></stringProp>
+                  <stringProp name="HTTPSampler.protocol">http</stringProp>
+                  <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+                  <stringProp name="HTTPSampler.path">/mobile/web/loan/pay-apply?</stringProp>
+                  <stringProp name="HTTPSampler.method">GET</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                  <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                  <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                  <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                </HTTPSamplerProxy>
+                <hashTree>
+                  <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="还款银行卡查询" enabled="true">
+                    <boolProp name="resetInterpreter">false</boolProp>
+                    <stringProp name="parameters"></stringProp>
+                    <stringProp name="filename"></stringProp>
+                    <stringProp name="script">import ssh.Database;
+//select id from tb_card_info WHERE user_id=&apos;182&apos; and status=&apos;1&apos;;
+String sql=&quot;select id from tb_card_info where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; and status=&apos;1&apos;  ORDER BY id DESC&quot;;
+
+String bankid=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;bankid&quot;,bankid);
+
+log.info(&quot;还款银行卡id：&quot;+bankid);</stringProp>
+                  </BeanShellPreProcessor>
+                  <hashTree/>
+                </hashTree>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="还款回调" enabled="true">
+                  <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+                    <collectionProp name="Arguments.arguments">
+                      <elementProp name="type" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                        <stringProp name="Argument.value">2</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                        <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                        <stringProp name="Argument.name">type</stringProp>
+                      </elementProp>
+                      <elementProp name="order_id" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                        <stringProp name="Argument.value">${uuid}</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                        <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                        <stringProp name="Argument.name">order_id</stringProp>
+                      </elementProp>
+                      <elementProp name="code" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                        <stringProp name="Argument.value">0</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                        <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                        <stringProp name="Argument.name">code</stringProp>
+                      </elementProp>
+                      <elementProp name="money" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                        <stringProp name="Argument.value">${money}</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                        <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                        <stringProp name="Argument.name">money</stringProp>
+                      </elementProp>
+                    </collectionProp>
+                  </elementProp>
+                  <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+                  <stringProp name="HTTPSampler.port"></stringProp>
+                  <stringProp name="HTTPSampler.protocol">http</stringProp>
+                  <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+                  <stringProp name="HTTPSampler.path">frontend/web/notify/test-callback?</stringProp>
+                  <stringProp name="HTTPSampler.method">GET</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                  <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                  <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                  <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                </HTTPSamplerProxy>
+                <hashTree>
+                  <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="查询还款订单编号" enabled="true">
+                    <boolProp name="resetInterpreter">false</boolProp>
+                    <stringProp name="parameters"></stringProp>
+                    <stringProp name="filename"></stringProp>
+                    <stringProp name="script">import ssh.Database;
+
+String sql=&quot;SELECT order_uuid FROM tb_user_credit_money_log where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+
+String uuid=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;uuid&quot;,uuid);
+
+log.info(&quot;还款回调的订单id：&quot;+uuid);</stringProp>
+                  </BeanShellPreProcessor>
+                  <hashTree/>
+                  <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="查询还款金额" enabled="true">
+                    <boolProp name="resetInterpreter">false</boolProp>
+                    <stringProp name="parameters"></stringProp>
+                    <stringProp name="filename"></stringProp>
+                    <stringProp name="script">import ssh.Database;
+
+//String sql=&quot;SELECT operator_money FROM tb_user_credit_money_log where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+String sql=&quot;SELECT total_money FROM tb_user_loan_order_repayment where order_id=&apos;&quot;+vars.get(&quot;id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+String money=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;money&quot;,money);
+
+log.info(&quot;还款回调的订单id：&quot;+money);</stringProp>
+                  </BeanShellPreProcessor>
+                  <hashTree/>
+                </hashTree>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="检查状态是否是待放款" enabled="true">
+          <stringProp name="IfController.condition">&quot;${status}&quot;==&quot;8&quot;</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+        </IfController>
+        <hashTree>
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="打款脚本" enabled="true">
+            <stringProp name="BeanShellSampler.query">import ssh.Getssh;
+import com.jcraft.jsch.*;
+//import ssh.GetCode;
+//import ch.ethz.ssh2.*;
+//String a=GetCode.ssh(vars.get(&quot;sship&quot;), vars.get(&quot;sshname&quot;), Integer.parseInt(vars.get(&quot;sshport&quot;)), vars.get(&quot;sshkey&quot;), vars.get(&quot;sshpassword&quot;), vars.get(&quot;command&quot;));sshev
+//String[] b={&quot;xufeng:123456:139.224.22.30:1022&quot;,&quot;test:123456:jsde-dev-app_cron_1:22&quot;};
+String host=vars.get(&quot;sshev&quot;);
+String[] ech=host.split(&quot;;&quot;);
+int num=ech.length;
+String[] sshhost=new String[num];
+for(int i=0;i&lt;num;i++){
+	sshhost[i]=ech[i];
+	log.info(&quot;host配置为：&quot;+ech[i]);
+}
+String a=Getssh.get(vars.get(&quot;sshkey&quot;),vars.get(&quot;sshpassword&quot;),vars.get(&quot;command&quot;),sshhost);
+log.info(&quot;打款脚本返回信息：&quot;+a);</stringProp>
+            <stringProp name="BeanShellSampler.filename"></stringProp>
+            <stringProp name="BeanShellSampler.parameters"></stringProp>
+            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+          </BeanShellSampler>
+          <hashTree/>
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="查询订单状态" enabled="true">
+            <stringProp name="BeanShellSampler.query">import ssh.Database;
+
+String sql=&quot;select STATUS from tb_user_loan_order where id=&apos;&quot;+vars.get(&quot;id&quot;)+&quot;&apos;&quot;;
+
+String status=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;status&quot;,status);
+
+log.info(&quot;订单状态status：&quot;+status);</stringProp>
+            <stringProp name="BeanShellSampler.filename"></stringProp>
+            <stringProp name="BeanShellSampler.parameters"></stringProp>
+            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+          </BeanShellSampler>
+          <hashTree/>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="检查状态是否已放款" enabled="true">
+            <stringProp name="IfController.condition">&quot;${status}&quot;==&quot;2&quot;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="打款回调" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="type" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">1</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">type</stringProp>
+                  </elementProp>
+                  <elementProp name="order_id" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${uid}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">order_id</stringProp>
+                  </elementProp>
+                  <elementProp name="code" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">0</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">code</stringProp>
+                  </elementProp>
+                  <elementProp name="money" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${money}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">money</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+              <stringProp name="HTTPSampler.path">/frontend/web/notify/test-callback?</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="查询订单id准备打款回调" enabled="true">
+                <stringProp name="filename"></stringProp>
+                <stringProp name="parameters"></stringProp>
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="script">import ssh.Database;
+
+String sql=&quot;select order_id from tb_financial_loan_record where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+
+String uid=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;uid&quot;,uid);
+
+log.info(&quot;打款回调的订单id：&quot;+uid);</stringProp>
+              </BeanShellPreProcessor>
+              <hashTree/>
+              <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="查询订单金额" enabled="true">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">import ssh.Database;
+
+String sql=&quot;select money from tb_financial_loan_record where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+
+String money=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;money&quot;,money);
+
+log.info(&quot;打款回调的订单金额：&quot;+money);</stringProp>
+              </BeanShellPreProcessor>
+              <hashTree/>
+            </hashTree>
+            <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="查询订单状态" enabled="true">
+              <stringProp name="BeanShellSampler.query">import ssh.Database;
+
+String sql=&quot;select STATUS from tb_user_loan_order where id=&apos;&quot;+vars.get(&quot;id&quot;)+&quot;&apos;&quot;;
+
+String status=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;status&quot;,status);
+
+log.info(&quot;订单状态status：&quot;+status);</stringProp>
+              <stringProp name="BeanShellSampler.filename"></stringProp>
+              <stringProp name="BeanShellSampler.parameters"></stringProp>
+              <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+            </BeanShellSampler>
+            <hashTree/>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="检查状态是否是还款中" enabled="true">
+              <stringProp name="IfController.condition">&quot;${status}&quot;==&quot;3&quot;</stringProp>
+              <boolProp name="IfController.evaluateAll">false</boolProp>
+            </IfController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="登陆手机客户端" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="password" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">123456</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">password</stringProp>
+                    </elementProp>
+                    <elementProp name="username" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">15995106013</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">username</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+                <stringProp name="HTTPSampler.path">/credit/web/credit-user/login?</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="点击还款" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="password" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${password}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">password</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+                <stringProp name="HTTPSampler.path">/mobile/web/user/check-pay-pwd-post</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="获取sign" enabled="true">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">sign</stringProp>
+                  <stringProp name="RegexExtractor.regex">{&quot;code&quot;:0,&quot;sign&quot;:&quot;(.*)&quot;,&quot;ret&quot;:true}</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default"></stringProp>
+                  <stringProp name="RegexExtractor.match_number"></stringProp>
+                </RegexExtractor>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="还款" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="pay_pwd_sign" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${sign}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">pay_pwd_sign</stringProp>
+                    </elementProp>
+                    <elementProp name="card_id" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${bankid}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">card_id</stringProp>
+                    </elementProp>
+                    <elementProp name="id" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${id}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">id</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+                <stringProp name="HTTPSampler.path">/mobile/web/loan/pay-apply?</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="还款银行卡查询" enabled="true">
+                  <boolProp name="resetInterpreter">false</boolProp>
+                  <stringProp name="parameters"></stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="script">import ssh.Database;
+//select id from tb_card_info WHERE user_id=&apos;182&apos; and status=&apos;1&apos;;
+String sql=&quot;select id from tb_card_info where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; and status=&apos;1&apos;  ORDER BY id DESC&quot;;
+
+String bankid=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;bankid&quot;,bankid);
+
+log.info(&quot;还款银行卡id：&quot;+bankid);</stringProp>
+                </BeanShellPreProcessor>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="还款回调" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="type" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">2</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">type</stringProp>
+                    </elementProp>
+                    <elementProp name="order_id" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${uuid}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">order_id</stringProp>
+                    </elementProp>
+                    <elementProp name="code" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">0</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">code</stringProp>
+                    </elementProp>
+                    <elementProp name="money" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">${money}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                      <stringProp name="Argument.name">money</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+                <stringProp name="HTTPSampler.path">frontend/web/notify/test-callback?</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="查询还款订单编号" enabled="true">
+                  <boolProp name="resetInterpreter">false</boolProp>
+                  <stringProp name="parameters"></stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="script">import ssh.Database;
+
+String sql=&quot;SELECT order_uuid FROM tb_user_credit_money_log where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+
+String uuid=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;uuid&quot;,uuid);
+
+log.info(&quot;还款回调的订单id：&quot;+uuid);</stringProp>
+                </BeanShellPreProcessor>
+                <hashTree/>
+                <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="查询还款金额" enabled="true">
+                  <boolProp name="resetInterpreter">false</boolProp>
+                  <stringProp name="parameters"></stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="script">import ssh.Database;
+
+//String sql=&quot;SELECT operator_money FROM tb_user_credit_money_log where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+String sql=&quot;SELECT total_money FROM tb_user_loan_order_repayment where order_id=&apos;&quot;+vars.get(&quot;id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+String money=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;money&quot;,money);
+
+log.info(&quot;还款回调的订单id：&quot;+money);</stringProp>
+                </BeanShellPreProcessor>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="检查状态是否已放款" enabled="true">
+          <stringProp name="IfController.condition">&quot;${status}&quot;==&quot;2&quot;</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+        </IfController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="打款回调" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="type" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">1</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">type</stringProp>
+                </elementProp>
+                <elementProp name="order_id" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${uid}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">order_id</stringProp>
+                </elementProp>
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">0</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                </elementProp>
+                <elementProp name="money" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${money}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">money</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">/frontend/web/notify/test-callback?</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="查询订单id准备打款回调" enabled="true">
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="script">import ssh.Database;
+
+String sql=&quot;select order_id from tb_financial_loan_record where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+
+String uid=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;uid&quot;,uid);
+
+log.info(&quot;打款回调的订单id：&quot;+uid);</stringProp>
+            </BeanShellPreProcessor>
+            <hashTree/>
+            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="查询订单金额" enabled="true">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">import ssh.Database;
+
+String sql=&quot;select money from tb_financial_loan_record where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+
+String money=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;money&quot;,money);
+
+log.info(&quot;打款回调的订单金额：&quot;+money);</stringProp>
+            </BeanShellPreProcessor>
+            <hashTree/>
+          </hashTree>
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="查询订单状态" enabled="true">
+            <stringProp name="BeanShellSampler.query">import ssh.Database;
+
+String sql=&quot;select STATUS from tb_user_loan_order where id=&apos;&quot;+vars.get(&quot;id&quot;)+&quot;&apos;&quot;;
+
+String status=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;status&quot;,status);
+
+log.info(&quot;订单状态status：&quot;+status);</stringProp>
+            <stringProp name="BeanShellSampler.filename"></stringProp>
+            <stringProp name="BeanShellSampler.parameters"></stringProp>
+            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+          </BeanShellSampler>
+          <hashTree/>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="检查状态是否是还款中" enabled="true">
+            <stringProp name="IfController.condition">&quot;${status}&quot;==&quot;3&quot;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="登陆手机客户端" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="password" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">123456</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">password</stringProp>
+                  </elementProp>
+                  <elementProp name="username" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">15995106013</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">username</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+              <stringProp name="HTTPSampler.path">/credit/web/credit-user/login?</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="点击还款" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="password" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${password}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">password</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+              <stringProp name="HTTPSampler.path">/mobile/web/user/check-pay-pwd-post</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="获取sign" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">sign</stringProp>
+                <stringProp name="RegexExtractor.regex">{&quot;code&quot;:0,&quot;sign&quot;:&quot;(.*)&quot;,&quot;ret&quot;:true}</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default"></stringProp>
+                <stringProp name="RegexExtractor.match_number"></stringProp>
+              </RegexExtractor>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="还款" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="pay_pwd_sign" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${sign}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">pay_pwd_sign</stringProp>
+                  </elementProp>
+                  <elementProp name="card_id" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${bankid}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">card_id</stringProp>
+                  </elementProp>
+                  <elementProp name="id" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${id}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">id</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+              <stringProp name="HTTPSampler.path">/mobile/web/loan/pay-apply?</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="还款银行卡查询" enabled="true">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">import ssh.Database;
+//select id from tb_card_info WHERE user_id=&apos;182&apos; and status=&apos;1&apos;;
+String sql=&quot;select id from tb_card_info where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; and status=&apos;1&apos;  ORDER BY id DESC&quot;;
+
+String bankid=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;bankid&quot;,bankid);
+
+log.info(&quot;还款银行卡id：&quot;+bankid);</stringProp>
+              </BeanShellPreProcessor>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="还款回调" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="type" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">2</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">type</stringProp>
+                  </elementProp>
+                  <elementProp name="order_id" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${uuid}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">order_id</stringProp>
+                  </elementProp>
+                  <elementProp name="code" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">0</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">code</stringProp>
+                  </elementProp>
+                  <elementProp name="money" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${money}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">money</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+              <stringProp name="HTTPSampler.path">frontend/web/notify/test-callback?</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="查询还款订单编号" enabled="true">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">import ssh.Database;
+
+String sql=&quot;SELECT order_uuid FROM tb_user_credit_money_log where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+
+String uuid=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;uuid&quot;,uuid);
+
+log.info(&quot;还款回调的订单id：&quot;+uuid);</stringProp>
+              </BeanShellPreProcessor>
+              <hashTree/>
+              <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="查询还款金额" enabled="true">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">import ssh.Database;
+
+//String sql=&quot;SELECT operator_money FROM tb_user_credit_money_log where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+String sql=&quot;SELECT total_money FROM tb_user_loan_order_repayment where order_id=&apos;&quot;+vars.get(&quot;id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+String money=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;money&quot;,money);
+
+log.info(&quot;还款回调的订单id：&quot;+money);</stringProp>
+              </BeanShellPreProcessor>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="检查状态是否是还款中" enabled="true">
+          <stringProp name="IfController.condition">&quot;${status}&quot;==&quot;3&quot;</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+        </IfController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="登陆手机客户端" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="password" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">123456</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">password</stringProp>
+                </elementProp>
+                <elementProp name="username" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">15995106013</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">username</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">/credit/web/credit-user/login?</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="点击还款" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="password" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${password}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">password</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">/mobile/web/user/check-pay-pwd-post</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="获取sign" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">sign</stringProp>
+              <stringProp name="RegexExtractor.regex">{&quot;code&quot;:0,&quot;sign&quot;:&quot;(.*)&quot;,&quot;ret&quot;:true}</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number"></stringProp>
+            </RegexExtractor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="还款" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="pay_pwd_sign" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${sign}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">pay_pwd_sign</stringProp>
+                </elementProp>
+                <elementProp name="card_id" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${bankid}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">card_id</stringProp>
+                </elementProp>
+                <elementProp name="id" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${id}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">id</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">/mobile/web/loan/pay-apply?</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="还款银行卡查询" enabled="true">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">import ssh.Database;
+//select id from tb_card_info WHERE user_id=&apos;182&apos; and status=&apos;1&apos;;
+String sql=&quot;select id from tb_card_info where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; and status=&apos;1&apos;  ORDER BY id DESC&quot;;
+
+String bankid=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;bankid&quot;,bankid);
+
+log.info(&quot;还款银行卡id：&quot;+bankid);</stringProp>
+            </BeanShellPreProcessor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="还款回调" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="type" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">2</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">type</stringProp>
+                </elementProp>
+                <elementProp name="order_id" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${uuid}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">order_id</stringProp>
+                </elementProp>
+                <elementProp name="code" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">0</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">code</stringProp>
+                </elementProp>
+                <elementProp name="money" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${money}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">money</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">http</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">frontend/web/notify/test-callback?</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="查询还款订单编号" enabled="true">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">import ssh.Database;
+
+String sql=&quot;SELECT order_uuid FROM tb_user_credit_money_log where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+
+String uuid=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;uuid&quot;,uuid);
+
+log.info(&quot;还款回调的订单id：&quot;+uuid);</stringProp>
+            </BeanShellPreProcessor>
+            <hashTree/>
+            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="查询还款金额" enabled="true">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">import ssh.Database;
+
+//String sql=&quot;SELECT operator_money FROM tb_user_credit_money_log where user_id=&apos;&quot;+vars.get(&quot;user_id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+String sql=&quot;SELECT total_money FROM tb_user_loan_order_repayment where order_id=&apos;&quot;+vars.get(&quot;id&quot;)+&quot;&apos; ORDER BY id DESC&quot;;
+String money=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+vars.put(&quot;money&quot;,money);
+
+log.info(&quot;还款回调的订单id：&quot;+money);</stringProp>
+            </BeanShellPreProcessor>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="察看结果树" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="聚合报告" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="逾期操作" enabled="false">
+          <stringProp name="BeanShellSampler.query">import ssh.Database;
+
+String sql=&quot;UPDATE tb_user_loan_order_repayment set plan_repayment_time=&apos;&quot;+vars.get(&quot;plan_repayment_time&quot;)+&quot;&apos;,interest_time=&apos;0&apos; where order_id=&apos;&quot;+vars.get(&quot;id&quot;)+&quot;&apos;&quot;;
+
+String info=Database.database(Integer.parseInt(vars.get(&quot;lport&quot;)), vars.get(&quot;rhost&quot;),Integer.parseInt(vars.get(&quot;rport&quot;)),vars.get(&quot;sshkey&quot;) ,vars.get(&quot;dbsshuser&quot;) , vars.get(&quot;dbsshpw&quot;),vars.get(&quot;dbsshhost&quot;), Integer.parseInt(vars.get(&quot;dbsshport&quot;)), sql.toLowerCase(), vars.get(&quot;dburl&quot;), vars.get(&quot;dbuser&quot;), vars.get(&quot;dbpw&quot;), vars.get(&quot;dbclass&quot;));
+
+log.info(&quot;修改数据返回：&quot;+info);</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="执行逾期脚本" enabled="false">
+          <stringProp name="BeanShellSampler.query">import ssh.Getssh;
+import com.jcraft.jsch.*;
+//import ssh.GetCode;
+//import ch.ethz.ssh2.*;
+//String a=GetCode.ssh(vars.get(&quot;sship&quot;), vars.get(&quot;sshname&quot;), Integer.parseInt(vars.get(&quot;sshport&quot;)), vars.get(&quot;sshkey&quot;), vars.get(&quot;sshpassword&quot;), vars.get(&quot;command&quot;));
+String host=vars.get(&quot;sshev&quot;);
+String[] ech=host.split(&quot;;&quot;);
+int num=ech.length;
+String[] sshhost=new String[num];
+for(int i=0;i&lt;num;i++){
+	sshhost[i]=ech[i];
+	log.info(&quot;host配置为：&quot;+ech[i]);
+}
+String a=Getssh.get(vars.get(&quot;sshkey&quot;),vars.get(&quot;sshpassword&quot;),vars.get(&quot;yuqicommand&quot;),sshhost);
+log.info(&quot;逾期返回信息：&quot;+a);</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+    <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="工作台" enabled="true">
+      <boolProp name="WorkBench.save">true</boolProp>
+    </WorkBench>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>

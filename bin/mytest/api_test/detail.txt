@@ -1,0 +1,33 @@
+﻿软件环境：
+jdk1.8 + apache-jmeter-3.2 + ant1.9.9 + eclipse + fiddler
+(jdk版本要与jmeter和ant的版本号匹配)
+
+
+
+
+
+1.mytest要放在jmeter软件的bin的目录下
+
+2.jmeter配置修改 jmeter.properties
+  user.properties=mytest\\api_test\\conf\\myuser.properties
+
+3.my.properties修改，改成自己需要测试的环境和数据
+
+4.lib\ext下添加额外jar包
+  mysql-connector-java-5.1.28.jar （jmeter连接数据库的jar包）
+  fastjson-1.2.7.jar
+  jxl.jar  
+  TestJson.jar (这个是自己编写的，有源代码)
+
+5.修改build.xml中，jmeter路径修改成自己的
+
+6.ant配置 把Jmeter根目录/extras 下的ant-jmeter-xxx.jar拷贝到ant根目录/lib下
+
+7.运行报错  ant下载最新版本1.10.1应该是1.8版本java编译生成。降低重新下载ant 1.7.1版本，执行ant命令，运行正常。或者升高jdk的版本号
+
+8. ant jmeter 提示前言不许有内容
+   解决方法：
+      1.bulid.xml 是utf-8 格式文件
+      2.jmeter.properties文件设置 sampleresult.default.encoding=utf-8
+        还是不行，在生成报表依然报 前言中不允许有内容
+      3.修改jmeter.save.saveservice.output_format=xml

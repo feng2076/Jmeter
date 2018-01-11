@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="1066" it="0" lt="1064" ct="52" ts="1504593590352" s="true" lb="登录" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="1824" sby="262" ng="1" na="1"/>
+<sample t="23" it="0" lt="0" ct="0" ts="1504593591440" s="true" lb="获取测试用例数" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="0" sby="0" ng="1" na="1"/>
+<httpSample t="230" it="0" lt="230" ct="0" ts="1504593591553" s="true" lb="account/new-home" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2863" sby="227" ng="1" na="1">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1504593591835" s="false" lb="user/change-pwd" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="555" sby="326" ng="1" na="1">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>ceshi shuju-----------  value is not same,key is code      key is not same,response doesn&apos;t contain line2</failureMessage>
+  </assertionResult>
+</httpSample>
+
+</testResults>

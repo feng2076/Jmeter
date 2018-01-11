@@ -1,0 +1,9 @@
+{
+	"message": "新密码不能和原始密码相同",
+	"info": "新密码不能和原始密码相同",
+	"data": "",
+	"code": 1,
+	"type": "yii\\base\\UserException",
+	"file": "/data/htdocs/koudai_deposit/frontend/controllers/UserController.php",
+	"line2": 889
+}

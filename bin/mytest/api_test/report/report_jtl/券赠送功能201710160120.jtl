@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="1073" it="0" lt="1072" ct="74" ts="1508131228031" s="true" lb="送券人登录" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="1827" sby="262" ng="1" na="1">
+  <assertionResult>
+    <name>code</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>登录用户验证</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="297" it="0" lt="297" ct="0" ts="1508131229167" s="false" lb="获取券列表数据" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="3548" sby="301" ng="1" na="1">
+  <assertionResult>
+    <name>要赠送的券是否存在</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;id&quot;:76678/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="92" it="0" lt="92" ct="0" ts="1508131229465" s="true" lb="进入赠送人列表" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="604" sby="305" ng="1" na="1">
+  <assertionResult>
+    <name>要赠送人是否存在</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="58" it="0" lt="58" ct="0" ts="1508131229560" s="false" lb="赠送券操作" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="524" sby="316" ng="1" na="1">
+  <assertionResult>
+    <name>券赠送是否成功</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Value expected to be &apos;0&apos;, but found &apos;-1&apos;</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="317" it="0" lt="317" ct="0" ts="1508131229620" s="true" lb="查看券列表数据" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="3548" sby="301" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="78" it="0" lt="78" ct="0" ts="1508131229939" s="true" lb="送券人退出登陆" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="536" sby="259" ng="1" na="1"/>
+<httpSample t="975" it="0" lt="975" ct="0" ts="1508131230019" s="true" lb="收到券人登录" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="1416" sby="327" ng="1" na="1">
+  <assertionResult>
+    <name>code</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>登录用户验证</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="2239" it="0" lt="2234" ct="2204" ts="1508131230997" s="true" lb="获取数据库中，收券人的券id" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="21" sby="0" ng="1" na="1"/>
+<httpSample t="252" it="0" lt="252" ct="13" ts="1508131233246" s="false" lb="我的口袋新增券数据" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2761" sby="282" ng="1" na="1">
+  <assertionResult>
+    <name>我的口袋弹窗收到赠送的券</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;id&quot;:/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="264" it="0" lt="264" ct="0" ts="1508131233503" s="true" lb="检查券列表数据" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="1965" sby="301" ng="1" na="1">
+  <assertionResult>
+    <name>列表中是否收到赠送的券</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+</testResults>

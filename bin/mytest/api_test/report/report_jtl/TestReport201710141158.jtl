@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="1298" it="0" lt="1297" ct="214" ts="1507996730829" s="true" lb="登录" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="1827" sby="262" ng="1" na="1"/>
+<sample t="26" it="0" lt="0" ct="0" ts="1507996732137" s="true" lb="获取测试用例数" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="0" sby="0" ng="1" na="1"/>
+<httpSample t="475" it="0" lt="475" ct="0" ts="1507996732309" s="true" lb="account/new-home" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2859" sby="227" ng="1" na="1">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="80" it="0" lt="80" ct="0" ts="1507996732826" s="false" lb="user/change-pwd" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="555" sby="326" ng="1" na="1">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>断言有问题的key值-----------&apos;code&apos;的值不对  || &apos;line2&apos;不存在   || </failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>jp@gc - JSON Path Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Value expected to be &apos;0&apos;, but found &apos;-1&apos;</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="296" it="0" lt="296" ct="26" ts="1507996733048" s="false" lb="project/get-project-list-all" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="6922" sby="372" ng="1" na="1">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>断言有问题的key值-----------&apos;new_user_project&apos;的值不对  || &apos;risk_msg&apos;的值不对  || &apos;channel_project_data&apos;的值不对  || &apos;koudaibao&apos;的值不对  || &apos;banner&apos;的值不对  || &apos;lock_project&apos;的值不对  || </failureMessage>
+  </assertionResult>
+</httpSample>
+
+</testResults>

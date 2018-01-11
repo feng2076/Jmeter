@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="1209" it="0" lt="0" ct="0" ts="1512612903793" s="true" lb="用户id查询" rc="" rm="" tn="脚本 1-1" dt="" by="0" sby="0" ng="1" na="1"/>
+<sample t="1057" it="0" lt="0" ct="0" ts="1512612905019" s="true" lb="查询订单编号" rc="" rm="" tn="脚本 1-1" dt="" by="0" sby="0" ng="1" na="1"/>
+<sample t="1048" it="0" lt="0" ct="0" ts="1512612906077" s="true" lb="查询订单状态" rc="" rm="" tn="脚本 1-1" dt="" by="0" sby="0" ng="1" na="1"/>
+<sample t="5656" it="0" lt="0" ct="0" ts="1512612907126" s="false" lb="提示订单状态" rc="" rm="" tn="脚本 1-1" dt="" by="0" sby="0" ng="1" na="1"/>
+
+<sample t="1166" it="0" lt="0" ct="0" ts="1512613120979" s="true" lb="用户id查询" rc="" rm="" tn="脚本 1-1" dt="" by="0" sby="0" ng="1" na="1"/>
+<sample t="1053" it="0" lt="0" ct="0" ts="1512613122157" s="true" lb="查询订单编号" rc="" rm="" tn="脚本 1-1" dt="" by="0" sby="0" ng="1" na="1"/>
+<sample t="1049" it="0" lt="0" ct="0" ts="1512613123210" s="true" lb="查询订单状态" rc="" rm="" tn="脚本 1-1" dt="" by="0" sby="0" ng="1" na="1"/>
+<sample t="2604" it="0" lt="0" ct="0" ts="1512613124260" s="false" lb="提示订单状态" rc="" rm="" tn="脚本 1-1" dt="" by="0" sby="0" ng="1" na="1"/>
+<sample t="1049" it="0" lt="0" ct="0" ts="1512613131783" s="true" lb="用户id查询" rc="" rm="" tn="脚本 1-1" dt="" by="0" sby="0" ng="1" na="1"/>
+<sample t="1051" it="0" lt="0" ct="0" ts="1512613132832" s="true" lb="查询订单编号" rc="" rm="" tn="脚本 1-1" dt="" by="0" sby="0" ng="1" na="1"/>
+<sample t="1047" it="0" lt="0" ct="0" ts="1512613133884" s="true" lb="查询订单状态" rc="" rm="" tn="脚本 1-1" dt="" by="0" sby="0" ng="1" na="1"/>
+<httpSample t="1717" it="0" lt="1716" ct="1116" ts="1512613135024" s="true" lb="登录" rc="200" rm="OK" tn="脚本 1-1" dt="text" by="916" sby="275" ng="1" na="1"/>
+<httpSample t="67" it="0" lt="67" ct="0" ts="1512613136758" s="true" lb="点击申请" rc="200" rm="OK" tn="脚本 1-1" dt="text" by="2312" sby="338" ng="1" na="1"/>
+<httpSample t="625" it="0" lt="625" ct="0" ts="1512613136826" s="true" lb="确认申请" rc="200" rm="OK" tn="脚本 1-1" dt="text" by="1074" sby="348" ng="1" na="1"/>
+<httpSample t="36" it="0" lt="36" ct="3" ts="1512613137453" s="true" lb="退出" rc="200" rm="OK" tn="脚本 1-1" dt="text" by="869" sby="221" ng="1" na="1"/>
+<sample t="1054" it="0" lt="0" ct="0" ts="1512613137491" s="true" lb="用户id查询" rc="" rm="" tn="脚本 1-1" dt="" by="0" sby="0" ng="1" na="1"/>
+<sample t="1053" it="0" lt="0" ct="0" ts="1512613138546" s="true" lb="查询订单编号" rc="" rm="" tn="脚本 1-1" dt="" by="0" sby="0" ng="1" na="1"/>
+<sample t="1048" it="0" lt="0" ct="0" ts="1512613139600" s="true" lb="查询订单状态" rc="" rm="" tn="脚本 1-1" dt="" by="0" sby="0" ng="1" na="1"/>
+<sample t="3002" it="0" lt="0" ct="0" ts="1512613140650" s="false" lb="提示" rc="" rm="" tn="脚本 1-1" dt="" by="0" sby="0" ng="1" na="1"/>
+<sample t="2" it="0" lt="0" ct="0" ts="1512613143660" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="脚本 1-1" dt="text" by="1536" sby="0" ng="1" na="1"/>
+
+</testResults>

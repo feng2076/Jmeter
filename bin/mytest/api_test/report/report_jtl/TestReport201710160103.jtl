@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="1210" it="0" lt="1208" ct="107" ts="1508130208387" s="true" lb="用户登录" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="1827" sby="262" ng="1" na="1">
+  <assertionResult>
+    <name>code</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>登录用户验证</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="285" it="0" lt="285" ct="0" ts="1508130209726" s="true" lb="项目详情" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="4581" sby="279" ng="1" na="1"/>
+<httpSample t="208" it="0" lt="208" ct="0" ts="1508130210038" s="false" lb="可用的券数据" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2378" sby="315" ng="1" na="1">
+  <assertionResult>
+    <name>code</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Value expected to be &apos;-1&apos;, but found &apos;0&apos;</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>券是否存在</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+<httpSample t="1196" it="0" lt="1195" ct="73" ts="1508130214834" s="true" lb="送券人登录" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="1827" sby="262" ng="1" na="1">
+  <assertionResult>
+    <name>code</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>登录用户验证</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="332" it="0" lt="332" ct="0" ts="1508130216099" s="false" lb="获取券列表数据" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="3548" sby="301" ng="1" na="1">
+  <assertionResult>
+    <name>要赠送的券是否存在</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;id&quot;:76678/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="99" it="0" lt="99" ct="0" ts="1508130216433" s="true" lb="进入赠送人列表" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="604" sby="305" ng="1" na="1">
+  <assertionResult>
+    <name>要赠送人是否存在</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="65" it="0" lt="65" ct="0" ts="1508130216536" s="false" lb="赠送券操作" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="524" sby="316" ng="1" na="1">
+  <assertionResult>
+    <name>券赠送是否成功</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Value expected to be &apos;0&apos;, but found &apos;-1&apos;</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="465" it="0" lt="465" ct="0" ts="1508130216606" s="true" lb="查看券列表数据" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="3548" sby="301" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="75" it="0" lt="75" ct="13" ts="1508130217074" s="true" lb="送券人退出登陆" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="536" sby="259" ng="1" na="1"/>
+<httpSample t="1146" it="0" lt="1146" ct="0" ts="1508130217151" s="true" lb="收到券人登录" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="1416" sby="327" ng="1" na="1">
+  <assertionResult>
+    <name>code</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>登录用户验证</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="2808" it="0" lt="2799" ct="2734" ts="1508130218299" s="true" lb="获取数据库中，收券人的券id" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="21" sby="0" ng="1" na="1"/>
+<httpSample t="268" it="0" lt="268" ct="12" ts="1508130221128" s="false" lb="我的口袋新增券数据" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2761" sby="282" ng="1" na="1">
+  <assertionResult>
+    <name>我的口袋弹窗收到赠送的券</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;id&quot;:/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="293" it="0" lt="293" ct="0" ts="1508130221400" s="true" lb="检查券列表数据" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="1965" sby="301" ng="1" na="1">
+  <assertionResult>
+    <name>列表中是否收到赠送的券</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+<httpSample t="1096" it="0" lt="1094" ct="90" ts="1508130224328" s="true" lb="登录" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="1827" sby="262" ng="1" na="1"/>
+<sample t="19" it="0" lt="0" ct="0" ts="1508130225443" s="true" lb="获取测试用例数" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="0" sby="0" ng="1" na="1"/>
+<httpSample t="359" it="0" lt="358" ct="0" ts="1508130225585" s="true" lb="account/new-home" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2859" sby="227" ng="1" na="1">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="52" it="0" lt="52" ct="0" ts="1508130225997" s="false" lb="user/change-pwd" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="555" sby="326" ng="1" na="1">
+  <assertionResult>
+    <name>jp@gc - JSON Path Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Value expected to be &apos;0&apos;, but found &apos;-1&apos;</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>断言有问题的key值-----------&apos;code&apos;的值不对  || &apos;line2&apos;不存在   || </failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="195" it="0" lt="194" ct="0" ts="1508130226225" s="false" lb="project/get-project-list-all" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="6255" sby="372" ng="1" na="1">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>断言有问题的key值-----------&apos;new_user_project&apos;的值不对  || &apos;risk_msg&apos;的值不对  || &apos;channel_project_data&apos;的值不对  || &apos;koudaibao&apos;的值不对  || &apos;banner&apos;的值不对  || &apos;lock_project&apos;的值不对  || </failureMessage>
+  </assertionResult>
+</httpSample>
+
+</testResults>

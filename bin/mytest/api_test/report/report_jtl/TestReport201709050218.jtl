@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="1066" it="0" lt="1063" ct="50" ts="1504592327092" s="true" lb="登录" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="1824" sby="262" ng="1" na="1"/>
+<sample t="23" it="0" lt="0" ct="0" ts="1504592328174" s="true" lb="获取测试用例数" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="0" sby="0" ng="1" na="1"/>
+<httpSample t="238" it="0" lt="238" ct="0" ts="1504592328283" s="true" lb="account/new-home" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2863" sby="227" ng="1" na="1">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="100" it="0" lt="100" ct="0" ts="1504592328539" s="false" lb="user/change-pwd" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="555" sby="326" ng="1" na="1">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>ceshi shuju-----------value is not same,key is line</failureMessage>
+  </assertionResult>
+</httpSample>
+
+</testResults>

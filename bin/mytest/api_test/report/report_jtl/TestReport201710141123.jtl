@@ -1,0 +1,6 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,Latency,IdleTime,Connect
+1507994631185,1257,登录,200,OK,线程组 1-1,text,true,,1827,262,1,1,1240,0,192
+1507994632448,42,获取测试用例数,200,OK,线程组 1-1,text,true,,0,0,1,1,0,0,0
+1507994632797,455,account/new-home,200,OK,线程组 1-1,text,true,,2859,227,1,1,455,0,0
+1507994633305,112,user/change-pwd,200,OK,线程组 1-1,text,false,断言有问题的key值-----------'code'的值不对  || 'line2'不存在   || ,555,326,1,1,112,0,27
+1507994634835,286,project/get-project-list-all,200,OK,线程组 1-1,text,false,断言有问题的key值-----------'new_user_project'的值不对  || 'risk_msg'的值不对  || 'channel_project_data'的值不对  || 'koudaibao'的值不对  || 'banner'的值不对  || 'lock_project'的值不对  || ,6922,372,1,1,286,0,0

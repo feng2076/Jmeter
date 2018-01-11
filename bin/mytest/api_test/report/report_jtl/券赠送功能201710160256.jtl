@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="1949" it="0" lt="1947" ct="217" ts="1508137018054" s="true" lb="送券人登录" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="1827" sby="262" ng="1" na="1">
+  <assertionResult>
+    <name>code</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>登录用户验证</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="326" it="0" lt="326" ct="15" ts="1508137020220" s="false" lb="获取券列表数据" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="3548" sby="301" ng="1" na="1">
+  <assertionResult>
+    <name>要赠送的券是否存在</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;id&quot;:76678/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="91" it="0" lt="91" ct="0" ts="1508137020550" s="true" lb="进入赠送人列表" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="604" sby="305" ng="1" na="1">
+  <assertionResult>
+    <name>要赠送人是否存在</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="59" it="0" lt="59" ct="0" ts="1508137020644" s="false" lb="赠送券操作" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="524" sby="316" ng="1" na="1">
+  <assertionResult>
+    <name>券赠送是否成功</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Value expected to be &apos;0&apos;, but found &apos;-1&apos;</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="307" it="0" lt="306" ct="0" ts="1508137020707" s="true" lb="查看券列表数据" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="3548" sby="301" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="59" it="0" lt="59" ct="0" ts="1508137021017" s="true" lb="送券人退出登陆" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="536" sby="259" ng="1" na="1"/>
+<httpSample t="1126" it="0" lt="1126" ct="0" ts="1508137021078" s="true" lb="收到券人登录" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="1416" sby="327" ng="1" na="1">
+  <assertionResult>
+    <name>code</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>登录用户验证</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="729" it="0" lt="0" ct="729" ts="1508137022209" s="false" lb="获取数据库中，收券人的券id" rc="null 0" rm="java.sql.SQLException: Cannot create PoolableConnectionFactory (Invalid authorization specification,  message from server: &quot;#28000ip not in whitelist, client ip is 58.247.93.162&quot;)" tn="线程组 1-1" dt="text" by="156" sby="0" ng="1" na="1"/>
+<httpSample t="266" it="0" lt="266" ct="13" ts="1508137022967" s="false" lb="我的口袋新增券数据" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2761" sby="282" ng="1" na="1">
+  <assertionResult>
+    <name>我的口袋弹窗收到赠送的券</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;id&quot;:/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="296" it="0" lt="296" ct="0" ts="1508137023238" s="true" lb="检查券列表数据" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2639" sby="301" ng="1" na="1">
+  <assertionResult>
+    <name>列表中是否收到赠送的券</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+</testResults>

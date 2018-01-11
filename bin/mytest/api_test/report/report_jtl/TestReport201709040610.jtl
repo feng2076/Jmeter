@@ -1,0 +1,5 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,Latency,IdleTime,Connect
+1504519803095,1053,登录,200,OK,线程组 1-1,text,true,,1824,262,1,1,1051,0,50
+1504519804159,24,获取测试用例数,200,OK,线程组 1-1,text,true,,0,0,1,1,0,0,0
+1504519804265,232,account/new-home,200,OK,线程组 1-1,text,true,,2863,227,1,1,231,0,0
+1504519804547,305,user/change-pwd,200,OK,线程组 1-1,text,false,"ceshi shuju-----------value is not same,key isline",555,326,1,1,305,0,0

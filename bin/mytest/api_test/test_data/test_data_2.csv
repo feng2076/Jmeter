@@ -1,0 +1,4 @@
+执行标识,aaac,接口名,请求方法,输入,期望输出
+NO,account/new-home,account/new-home?,GET,,
+YES,user/change-pwd,user/change-pwd?,POST,old_pwd=123456&new_pwd=123456&,mytest\api_test\assert_data\change-pwd.txt
+YES,project/get-project-list-all,project/get-project-list-all?,GET,channelId=16&&clientType=android&appVersion=6.2.5.4&deviceId=A10000555E5E32&deviceName=vivoX7Plus&osVersion=5.1.1&appMarket=notmarket,mytest\api_test\assert_data\project-list.txt
